@@ -1,0 +1,8 @@
+##### CONFIGURACIÓN DEL ROUTER #####
+interface fastEthernet 0/0
+no shudown
+interface gi o fa 0/0.10
+encapsulation dot1q
+ip adddres 0.0.0.0 0.0.0.0
+no shudown
+
