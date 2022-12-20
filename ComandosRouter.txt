@@ -1,0 +1,44 @@
+interface fastEthernet 0/0
+ip address 192.168.1.1 255.255.255.0
+ip dhcp pool Subred1
+network 192.168.1.1 255.255.255.0
+default-router 192.168.1.1
+ip dhcp excluded-addres 192.168.1.1 
+
+interface fastEthernet 0/0
+ip address 192.168.2.1 255.255.255.0
+ip dhcp pool Subred1
+network 192.168.2.1 255.255.255.0
+default-router 192.168.2.1
+ip dhcp excluded-addres 192.168.2.1 
+
+interface fastEthernet 0/0
+ip address 192.168.3.1 255.255.255.0
+ip dhcp pool Subred1
+network 192.168.3.1 255.255.255.0
+default-router 192.168.3.1
+ip dhcp excluded-addres 192.168.3.1 
+
+interface fastEthernet 0/0
+ip address 192.168.4.1 255.255.255.0
+ip dhcp pool Subred1
+network 192.168.4.1 255.255.255.0
+default-router 192.168.4.1
+ip dhcp excluded-addres 192.168.4.1 
+
+route rip
+network 192.168.1.0
+network 192.168.2.0
+network 192.168.3.0
+network 192.168.4.0
+network 10.1.1.1
+network 10.1.1.2
+network 10.2.2.1
+network 10.2.2.2
+network 10.3.3.1
+network 10.3.3.2
+network 10.4.4.1
+network 10.4.4.2
+
+investigar levantar un servidor dhcp 
+sustituir conectar un calbe eternet 
